@@ -155,6 +155,7 @@
     <Content Include="scripts\mytestimonials.js" />
     <Content Include="scripts\npm.js" />
     <Content Include="scripts\scripts.js" />
+    <Content Include="scripts\testimonialwebapi.js" />
     <Content Include="sitemap.xml" />
     <Content Include="styles\bootstrapstylesheet.css" />
     <Content Include="styles\galleria.classic.css" />
@@ -164,8 +165,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ErrorHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Controllers\Testimonial.cs" />
+    <Compile Include="Controllers\TestimonialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
