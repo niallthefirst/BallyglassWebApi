@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{770C0F63-9913-474A-A0A7-29EB8D7BA2A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BallyglassWebApi</RootNamespace>
+    <AssemblyName>BallyglassWebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\BallyglassThatchedCottage.com\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bookings.htm" />
+    <Content Include="calendar.htm" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\pwi.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\background.JPG" />
+    <Content Include="images\backgroundcloseup.jpg" />
+    <Content Include="images\backgroundfaded.JPG" />
+    <Content Include="images\ballyglass2520009.JPG" />
+    <Content Include="images\ballyglass2520010.JPG" />
+    <Content Include="images\ballyglass2520012.JPG" />
+    <Content Include="images\ballyglass2520015.JPG" />
+    <Content Include="images\ballyglassheader.png" />
+    <Content Include="images\DSCN0068.JPG" />
+    <Content Include="images\DSCN0070.JPG" />
+    <Content Include="images\DSCN3530.JPG" />
+    <Content Include="images\DSCN3532.JPG" />
+    <Content Include="images\DSCN3544.JPG" />
+    <Content Include="images\DSCN3545.JPG" />
+    <Content Include="images\DSCN4080.JPG" />
+    <Content Include="images\DSCN4127.JPG" />
+    <Content Include="images\DSCN4257.JPG" />
+    <Content Include="images\DSCN4261.JPG" />
+    <Content Include="images\DSCN4262.JPG" />
+    <Content Include="images\frontleftangle.jpg" />
+    <Content Include="images\icons\classic-loader.gif" />
+    <Content Include="images\icons\classic-map.png" />
+    <Content Include="images\icons\facebook.jpg" />
+    <Content Include="images\icons\facebooklogo.jpg" />
+    <Content Include="images\icons\facebookwide.jpg" />
+    <Content Include="images\icons\hogans.jpg" />
+    <Content Include="images\icons\icon-earth.png" />
+    <Content Include="images\icons\loader.gif" />
+    <Content Include="images\icons\loading.gif" />
+    <Content Include="images\icons\tripadvisor.jpg" />
+    <Content Include="images\IMG_1966.JPG" />
+    <Content Include="images\IMG_1986.JPG" />
+    <Content Include="images\IMG_1987-001.JPG" />
+    <Content Include="images\IMG_1987.JPG" />
+    <Content Include="images\IMG_2734.JPG" />
+    <Content Include="images\IMG_2738.JPG" />
+    <Content Include="images\IMG_2748.JPG" />
+    <Content Include="images\IMG_2752.JPG" />
+    <Content Include="images\IMG_2762.JPG" />
+    <Content Include="images\IMG_4287.JPG" />
+    <Content Include="index.htm" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.css" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.min.css" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.3.1\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages\bootstrap.3.3.1\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.3.1\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.3.3.1\content\Scripts\npm.js" />
+    <None Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0-vsdoc.js" />
+    <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.js" />
+    <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.min.js" />
+    <None Include="packages\jQuery.1.9.0\Tools\jquery-1.9.0.intellisense.js" />
+    <Content Include="resources\datajson.js" />
+    <Content Include="resources\dataraw.js" />
+    <Content Include="robots.txt" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\contentLoader.js" />
+    <Content Include="scripts\galleria-1.2.9.min.js" />
+    <Content Include="scripts\galleria.classic.js" />
+    <Content Include="scripts\galleria.classic.min.js" />
+    <Content Include="scripts\galleria.picasa.js" />
+    <Content Include="scripts\galleria.picasa.min.js" />
+    <None Include="scripts\jquery-1.9.0-vsdoc.js" />
+    <Content Include="scripts\jquery-1.9.0.js" />
+    <Content Include="scripts\jquery-1.9.0.min.js" />
+    <Content Include="scripts\mycarousel.js" />
+    <Content Include="scripts\myfacebook.js" />
+    <Content Include="scripts\mytestimonials.js" />
+    <Content Include="scripts\npm.js" />
+    <Content Include="scripts\scripts.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="styles\bootstrapstylesheet.css" />
+    <Content Include="styles\galleria.classic.css" />
+    <Content Include="styles\mybootstrapstylesheet.css" />
+    <Content Include="styles\stylesheet.css" />
+    <Content Include="testimonials.htm" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages\bootstrap.3.3.1\bootstrap.3.3.1.nupkg" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.css.map" />
+    <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.3.3.1\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages\bootstrap.3.3.1\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="packages\bootstrap.3.3.1\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.min.map" />
+    <Content Include="packages\jQuery.1.9.0\jQuery.1.9.0.nupkg" />
+    <Content Include="packages\jQuery.1.9.0\Tools\common.ps1" />
+    <Content Include="packages\jQuery.1.9.0\Tools\install.ps1" />
+    <Content Include="packages\jQuery.1.9.0\Tools\uninstall.ps1" />
+    <Content Include="packages\repositories.config" />
+    <Content Include="scripts\jquery-1.9.0.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="packages\Microsoft.AspNet.WebApi.4.0.20710.0\" />
+    <Folder Include="packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\" />
+    <Folder Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\content\" />
+    <Folder Include="packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\" />
+    <Folder Include="packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\" />
+    <Folder Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\" />
+    <Folder Include="packages\Microsoft.Net.Http.2.0.20710.0\lib\net45\" />
+    <Folder Include="packages\Newtonsoft.Json.4.5.6\lib\net40\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20841</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20487/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

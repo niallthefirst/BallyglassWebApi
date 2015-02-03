@@ -1,0 +1,8 @@
+﻿User-agent: *
+Disallow: /Content
+Disallow: /css
+Disallow: /js
+Disallow: /packages
+Disallow: /resources
+Disallow: /scripts
+Disallow: /styles

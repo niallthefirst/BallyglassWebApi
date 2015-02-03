@@ -1,0 +1,158 @@
+﻿/* File Created: December 19, 2014 */
+body {
+	
+	font-family: 'EB Garamond', serif;
+	
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: #808080;
+	line-height: 30px;
+	
+
+	border-left: 50px solid #ECECEA;
+	border-right: 50px solid #ECECEA;
+	
+	background-color:#F5F1EC;
+	 
+}
+
+#main
+{
+	margin:1%;
+}
+#toparticletext
+{
+	margin:1%;
+	background-color:#E2DBD3;
+	text-align:center;
+}
+
+#weeklongsstays
+{
+	padding:1%;
+	}
+#bookingsmaintext
+{
+	margin:1%;
+	background-color:#E2DBD3;
+	}
+
+.headerimage
+{
+	margin:1%;
+}
+	
+h1
+{
+	font-family: 'Great Vibes', cursive;
+	font-weight:bold;
+}
+h2
+{
+	font-weight:bold;
+}
+h3
+{
+	font-weight:bold;
+}
+h4
+{
+	font-weight:bold;
+}
+
+.carousel 
+{
+		
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    
+}
+
+
+aside > article > address
+{
+	font-size:medium;
+	color:White;
+	font-weight:bold;
+}
+address > #phone
+{
+	color:#97BF0D;
+}
+.facebooklogo
+{
+	margin:0.5%;
+	max-width:80px;
+	padding:0px;
+	}
+
+.sitefooter
+{
+	margin-top:1%;
+	font-size:small;
+}	
+header {
+	font-weight: 200;
+	
+}
+
+.sleepssix	
+{
+	color:White;
+	font-size:xx-large;
+}
+
+.mynavbar {
+	background-color: #003e52;
+	opacity: 0.6;
+}
+
+
+
+#testimonials
+{
+	
+	margin-top:2%;
+	}
+
+	
+blockquote
+{
+	background-color:#E2DBD3;
+	}
+
+
+
+blockquote:before {
+    content:open-quote;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 6px;
+    position: absolute;
+    top: 12px;
+}
+
+/*hyphen before the author*/
+blockquote > footer > cite:before {
+	content: " - ";
+}
+
+article section 
+{
+	font-size:large;
+}
+
+article footer
+{
+	font-size:large;
+}
+
+	
+#bookingsmaintext, #calendarmaintext
+{
+	margin:1%;
+	padding:2%;
+	background-color:#E2DBD3;
+	}        
