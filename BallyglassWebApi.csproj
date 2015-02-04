@@ -73,6 +73,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Testimonials.mdf" />
+    <Content Include="App_Data\Testimonials_log.ldf">
+      <DependentUpon>Testimonials.mdf</DependentUpon>
+    </Content>
     <Content Include="bookings.htm" />
     <Content Include="calendar.htm" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -132,6 +136,7 @@
     <Content Include="packages\bootstrap.3.3.1\content\Scripts\bootstrap.js" />
     <Content Include="packages\bootstrap.3.3.1\content\Scripts\bootstrap.min.js" />
     <Content Include="packages\bootstrap.3.3.1\content\Scripts\npm.js" />
+    <Content Include="Admin\mla_export_Testimonials.csv" />
     <None Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0-vsdoc.js" />
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.js" />
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.min.js" />
@@ -162,7 +167,10 @@
     <Content Include="styles\mybootstrapstylesheet.css" />
     <Content Include="styles\stylesheet.css" />
     <Content Include="testimonials.htm" />
-    <Content Include="Web.config" />
+    <Content Include="TestimonialsTest.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\ErrorHandler.cs" />

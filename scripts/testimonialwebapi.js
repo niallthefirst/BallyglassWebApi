@@ -2,33 +2,36 @@
 /// <reference path="jquery-2.1.3.intellisense.js" />
 
 $(document).ready(function () {
-    console.log("testimonials ready");
+    writeResult("ready");
 
     getTestimonials();
 
-    //$("#Add").click(function () {
-    //    var data = {
-    //        "Name": "name",
-    //        "Comment": "comment",
-    //        "Date": "2014"
-    //    };
+    $("#Add").click(function () {
+        var data = {
+            "Name": "name",
+            "Comment": "comment",
+            "Date": "2014"
+        };
 
-    //    addTestimonial(data);
-    //});
+        addTestimonial(data);
+    });
 
-    //$("#GetAll").click(function () {
-    //    getTestimonials();
-    //});
+    $("#GetAll").click(function () {
+        getTestimonials();
+    });
 
 
-    //$("#Get").click(function () {
-    //    var value = $("#id").val();
-    //    getSingleTestimonial(value);
-    //});
+    $("#Get").click(function () {
+        var value = $("#id").val();
+        getSingleTestimonial(value);
+    });
 
 
 });
 
+var writeResult = function (message) {
+    $("#result").text(message);
+}
 
 var addTestimonial = function (dataJSON) {
 
@@ -39,10 +42,10 @@ var addTestimonial = function (dataJSON) {
         data: dataJSON
     })
         .fail(function (jqXHR, textStatus, errorThrown) {
-            console.log("fail " + errorThrown);
+            writeResult("fail " + errorThrown);
         })
         .done(function (data, textStatus, jqXHR) {
-            console.log(data);
+            writeResult(data);
 
         });
 
@@ -58,13 +61,13 @@ var getSingleTestimonial = function (id) {
 
     })
         .fail(function (jqXHR, textStatus, errorThrown) {
-            console.log("fail " + errorThrown);
+            writeResult("fail " + errorThrown);
         })
         .done(function (data, textStatus, jqXHR) {
             //var jsonData = JSON.stringify(data);
             var message = JSON.stringify(data);
 
-            console.log(message);
+            writeResult(message);
         }
     );
 
@@ -78,7 +81,7 @@ var getTestimonials = function () {
         type: 'GET'
     })
         .fail(function (jqXHR, textStatus, errorThrown) {
-            console.log("fail " + errorThrown);
+            writeResult("fail " + errorThrown);
         })
         .done(function (data, textStatus, jqXHR) {
             //var jsonData = JSON.stringify(data);
@@ -86,9 +89,8 @@ var getTestimonials = function () {
             $.each(data, function (index, value) {
                 message += " | " + JSON.stringify(value);
             });
-            console.log(message);
+            writeResult(message);
         }
     );
 
 };
-
