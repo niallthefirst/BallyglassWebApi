@@ -13,7 +13,7 @@ namespace BallyglassWebApi
         // GET api/images
         public IEnumerable<string> Get()
         {
-            var localImagesPath = Directory.GetFiles(System.Web.HttpContext.Current.Server.MapPath("~/images"));
+            var localImagesPath = Directory.GetFiles(System.Web.HttpContext.Current.Server.MapPath("~/images/carousel"));
             var websiteRoot = System.Web.HttpContext.Current.Server.MapPath("~");
 
             var relativeImages = localImagesPath.Select(local => local.Substring(websiteRoot.Length, local.Length - websiteRoot.Length));

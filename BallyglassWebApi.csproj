@@ -39,13 +39,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\BallyglassThatchedCottage.com\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -56,13 +57,13 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BallyglassThatchedCottage.com\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -90,22 +91,30 @@
     <Content Include="images\background.JPG" />
     <Content Include="images\backgroundcloseup.jpg" />
     <Content Include="images\backgroundfaded.JPG" />
-    <Content Include="images\ballyglass2520009.JPG" />
-    <Content Include="images\ballyglass2520010.JPG" />
-    <Content Include="images\ballyglass2520012.JPG" />
-    <Content Include="images\ballyglass2520015.JPG" />
     <Content Include="images\ballyglassheader.png" />
-    <Content Include="images\DSCN0068.JPG" />
-    <Content Include="images\DSCN0070.JPG" />
-    <Content Include="images\DSCN3530.JPG" />
-    <Content Include="images\DSCN3532.JPG" />
-    <Content Include="images\DSCN3544.JPG" />
-    <Content Include="images\DSCN3545.JPG" />
-    <Content Include="images\DSCN4080.JPG" />
-    <Content Include="images\DSCN4127.JPG" />
-    <Content Include="images\DSCN4257.JPG" />
-    <Content Include="images\DSCN4261.JPG" />
-    <Content Include="images\DSCN4262.JPG" />
+    <Content Include="images\carousel\background.JPG" />
+    <Content Include="images\carousel\backgroundcloseup.jpg" />
+    <Content Include="images\carousel\backgroundfaded.JPG" />
+    <Content Include="images\carousel\ballyglass2520009.JPG" />
+    <Content Include="images\carousel\ballyglass2520010.JPG" />
+    <Content Include="images\carousel\ballyglass2520012.JPG" />
+    <Content Include="images\carousel\ballyglass2520015.JPG" />
+    <Content Include="images\carousel\DSCN3530.JPG" />
+    <Content Include="images\carousel\DSCN3532.JPG" />
+    <Content Include="images\carousel\DSCN3544.JPG" />
+    <Content Include="images\carousel\DSCN3545.JPG" />
+    <Content Include="images\carousel\DSCN4127.JPG" />
+    <Content Include="images\carousel\DSCN4257.JPG" />
+    <Content Include="images\carousel\DSCN4261.JPG" />
+    <Content Include="images\carousel\DSCN4262.JPG" />
+    <Content Include="images\carousel\frontleftangle.jpg" />
+    <Content Include="images\carousel\IMG_1966.JPG" />
+    <Content Include="images\carousel\IMG_1986.JPG" />
+    <Content Include="images\carousel\IMG_2734.JPG" />
+    <Content Include="images\carousel\IMG_2738.JPG" />
+    <Content Include="images\carousel\IMG_2748.JPG" />
+    <Content Include="images\carousel\IMG_2752.JPG" />
+    <Content Include="images\carousel\IMG_4287.JPG" />
     <Content Include="images\frontleftangle.jpg" />
     <Content Include="images\icons\classic-loader.gif" />
     <Content Include="images\icons\classic-map.png" />
@@ -117,16 +126,6 @@
     <Content Include="images\icons\loader.gif" />
     <Content Include="images\icons\loading.gif" />
     <Content Include="images\icons\tripadvisor.jpg" />
-    <Content Include="images\IMG_1966.JPG" />
-    <Content Include="images\IMG_1986.JPG" />
-    <Content Include="images\IMG_1987-001.JPG" />
-    <Content Include="images\IMG_1987.JPG" />
-    <Content Include="images\IMG_2734.JPG" />
-    <Content Include="images\IMG_2738.JPG" />
-    <Content Include="images\IMG_2748.JPG" />
-    <Content Include="images\IMG_2752.JPG" />
-    <Content Include="images\IMG_2762.JPG" />
-    <Content Include="images\IMG_4287.JPG" />
     <Content Include="index.htm" />
     <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.css" />
     <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.min.css" />

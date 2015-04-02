@@ -38,7 +38,7 @@ function drawCarousel(arrayOfURIs) {
     indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
 
     var url = arrayOfURIs[0];
-    var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("Images").length + 1);
+    var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("images/carousel").length + 1);
     //add each image to the inner
     inner.append("<div class='item active'><img src='" + url + "' class='img-responsive' alt='" + altText + "' ></div>");
 

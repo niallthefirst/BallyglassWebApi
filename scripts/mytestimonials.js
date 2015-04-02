@@ -2,7 +2,7 @@
 /// <reference path="jquery-2.1.3.intellisense.js" />
 
 $(document).ready(function () {
-    console.log("ready");
+    //console.log("ready");
 
     getTestimonials();
 
