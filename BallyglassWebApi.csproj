@@ -159,14 +159,12 @@
     <Content Include="scripts\mytestimonials.js" />
     <Content Include="scripts\npm.js" />
     <Content Include="scripts\scripts.js" />
-    <Content Include="scripts\testimonialwebapi.js" />
     <Content Include="sitemap.xml" />
     <Content Include="styles\bootstrapstylesheet.css" />
     <Content Include="styles\galleria.classic.css" />
     <Content Include="styles\mybootstrapstylesheet.css" />
     <Content Include="styles\stylesheet.css" />
     <Content Include="testimonials.htm" />
-    <Content Include="TestimonialsTest.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

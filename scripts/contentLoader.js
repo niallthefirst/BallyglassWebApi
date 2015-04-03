@@ -21,6 +21,19 @@
         loadContent('bookings.htm');
     });
         
+    
+    var loadContent = function (filename) {
+
+        $("#main").load(filename + " #main > *",
+            function () {
+
+                carouselModule.Draw();
+               
+                testimonialModule.Draw();
+            }
+        );
+
+    };
 
 
    
@@ -28,16 +41,6 @@
 });
 
 
-var loadContent = function (filename) {
-
-    $("#main").load(filename + " #main > *",
-        function () {
-            getImages();
-            getTestimonials();
-        }
-    );
-
-};
 
 
 
