@@ -2,12 +2,12 @@
 /// <reference path="jquery-2.1.3.js" />
 
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    console.log("images ready");
+//    console.log("images ready");
 
-    carouselModule.Draw();
-});
+//    carouselModule.Draw();
+//});
 
 var carouselModule = (function () {
 

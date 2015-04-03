@@ -145,7 +145,6 @@
     <Content Include="robots.txt" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\contentLoader.js" />
     <Content Include="scripts\galleria-1.2.9.min.js" />
     <Content Include="scripts\galleria.classic.js" />
     <Content Include="scripts\galleria.classic.min.js" />
