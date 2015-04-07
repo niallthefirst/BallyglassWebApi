@@ -17,11 +17,11 @@ var carouselModule = (function () {
         $("#image").attr("src", imageUrl);
     }
     function drawCarousel(arrayOfURIs) {
-        var indicator = $("ol.carousel-indicators");
+        //var indicator = $("ol.carousel-indicators");
         var inner = $("div.carousel-inner");
 
         //add a li for each image.
-        indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
+        //indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
 
         var url = arrayOfURIs[0];
         var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("images/carousel").length + 1);
@@ -32,16 +32,16 @@ var carouselModule = (function () {
         var index = 1;
         var interval = setInterval(function () {
             url = window.location.origin + "//" + arrayOfURIs[index];
-            drawImageInCarousel(indicator, inner, index, url);
+            drawImageInCarousel(inner, index, url);
             if (index >= arrayOfURIs.length - 1) {
                 clearInterval(interval);
             }
             index++;
         }, 2000);
     }
-    function drawImageInCarousel(indicator, inner, index, url) {
+    function drawImageInCarousel(inner, index, url) {
         var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("Images").length + 1);
-        indicator.append("<li data-target='#myCarousel' data-slide-to='" + index + "'></li>");
+        //indicator.append("<li data-target='#myCarousel' data-slide-to='" + index + "'></li>");
         inner.append("<div class='item'><img src='" + url + "' class='img-responsive' alt='" + altText + "' ></div>");
     }
 
