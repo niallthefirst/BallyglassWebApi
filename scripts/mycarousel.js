@@ -55,7 +55,7 @@ var carouselModule = (function () {
             type: 'GET'
         })
                 .fail(function (jqXHR, textStatus, errorThrown) {
-                    writeResult("fail " + errorThrown);
+                     errorModule.Write("fail " + errorThrown);
                 })
                 .done(function (data, textStatus, jqXHR) {
                     drawCarousel(data);

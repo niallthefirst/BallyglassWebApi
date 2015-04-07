@@ -11,3 +11,4 @@ D:\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.xml
 D:\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.WebHost.xml
 D:\Documents\GitHub\BallyglassWebApi\obj\Release\BallyglassWebApi.dll
 D:\Documents\GitHub\BallyglassWebApi\obj\Release\BallyglassWebApi.pdb
+D:\Documents\GitHub\BallyglassWebApi\obj\Release\BallyglassWebApi.csprojResolveAssemblyReference.cache

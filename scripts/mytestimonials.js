@@ -84,7 +84,7 @@ var testimonialModule = (function () {
             data: dataJSON
         })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                console.log("fail " + errorThrown);
+                errorModule.Write("fail " + errorThrown);
             })
             .done(function (data, textStatus, jqXHR) {
                 console.log(data);
@@ -99,7 +99,7 @@ var testimonialModule = (function () {
 
         })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                console.log("fail " + errorThrown);
+                errorModule.Write("fail " + errorThrown);
             })
             .done(function (data, textStatus, jqXHR) {
                 //var message = JSON.stringify(data);
@@ -121,7 +121,7 @@ var testimonialModule = (function () {
             type: 'GET'
         })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                console.log("fail " + errorThrown);
+                errorModule.Write("fail " + errorThrown);
             })
             .done(function (data, textStatus, jqXHR) {
                 showQuote(data);
@@ -139,7 +139,7 @@ var testimonialModule = (function () {
             type: 'GET'
         })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                console.log("fail " + errorThrown);
+                errorModule.Write("fail " + errorThrown);
             })
             .done(function (data, textStatus, jqXHR) {
                 drawAllQuotes(data);
