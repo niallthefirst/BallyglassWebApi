@@ -150,6 +150,7 @@
     <Content Include="scripts\galleria.classic.min.js" />
     <Content Include="scripts\galleria.picasa.js" />
     <Content Include="scripts\galleria.picasa.min.js" />
+    <None Include="Properties\PublishProfiles\register365.pubxml" />
     <None Include="scripts\jquery-1.9.0-vsdoc.js" />
     <Content Include="scripts\jquery-1.9.0.js" />
     <Content Include="scripts\jquery-1.9.0.min.js" />

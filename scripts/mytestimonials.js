@@ -34,6 +34,14 @@ var testimonialModule = (function () {
 
     //Privates
     var showQuote = function (testimonials) {
+        if (testimonials == null)
+        {
+            testimonials = new Array();
+            var defaultTestimonial = { Name: "Default - Noel & Michelle", Comment: "We had and amazing stay, the cottage is stunning and we will most certainly be back again!", Date: "2011", };
+            testimonials.push(defaultTestimonial);
+            
+        }
+
         var quoteIndex = getQuoteIndex(testimonials.length);
         var value = testimonials[quoteIndex];
         var blockquoteP = $("blockquote > p");
@@ -52,6 +60,14 @@ var testimonialModule = (function () {
     };
 
     var drawAllQuotes = function (testimonials) {
+
+        if (testimonials == null) {
+            testimonials = new Array();
+            var defaultTestimonial = { Name: "Noel & Michelle", Comment: "We had and amazing stay, the cottage is stunning and we will most certainly be back again!", Date: "2011", };
+            testimonials.push(defaultTestimonial);
+
+        }
+
         $.each(testimonials, function (index, value) {
             var article = $("#alltestimonials");
             var blockquote = "<blockquote><p>" + value.Comment + "</p><footer><span>" + value.Date + "</span><cite>" + value.Name + "</cite></footer></blockquote>";
