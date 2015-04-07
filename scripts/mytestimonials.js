@@ -111,7 +111,7 @@ var testimonialModule = (function () {
         );
     };
 
-
+    var showQuoteInterval;
     function drawOneAtATime() {
 
         console.log("Draw Testimonials One At A Time ");
@@ -125,7 +125,7 @@ var testimonialModule = (function () {
             })
             .done(function (data, textStatus, jqXHR) {
                 showQuote(data);
-                setInterval(function () { showQuote(data); }, 10000);
+                showQuoteInterval = setInterval(function () { showQuote(data); }, 10000);
             });
 
     }
@@ -133,6 +133,9 @@ var testimonialModule = (function () {
     function drawAllAtOnce() {
 
         console.log("Draw Testimonials All At Once ");
+
+        clearInterval(showQuoteInterval);
+
         $.ajax({
             dataType: "json",
             url: 'api/Testimonials',
