@@ -98,31 +98,59 @@ namespace BallyglassWebApi.Controllers
         public string Post([FromBody]Testimonial value)
         {
             string response = "Failed to add testimonial.";
-            int newID = -1;
-            try
+
+            if (value.Password == null)
             {
-                newID = AddTestimonialToDB(value);
+                response = "Failed to Add Testimonial. Password required. This should have been emailed to you. Contact ballyglasscottage@gmail.com.";
 
-                if (newID >= 0)
+            }
+            else
+            {
+                bool passwordPassed = CheckPassword(value.Password);
+                if (passwordPassed)
                 {
-                    value.ID = newID;
+                    int newID = -1;
+                    try
+                    {
+                        newID = AddTestimonialToDB(value);
 
-                    response = string.Format("Successfully added testimonial {0}, {1}. Thankyou {2}. ", value.ID, value.Comment, value.Name);
+                        if (newID >= 0)
+                        {
+                            value.ID = newID;
 
+                            response = string.Format("Successfully added testimonial {0}, {1}. Thankyou {2}. ", value.ID, value.Comment, value.Name);
+
+                        }
+                        else
+                        {
+                            ErrorHandler.Write("something went wrong");
+
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorHandler.Write("something went wrong", ex);
+                    }
                 }
                 else
                 {
-                    ErrorHandler.Write("something went wrong");
-
-
+                    response = "Failed to Add Testimonial. Password is not valid or has been used before. This should have been emailed to you. Contact ballyglasscottage@gmail.com.";
                 }
             }
-            catch (Exception ex)
-            {
-                ErrorHandler.Write("something went wrong", ex);
-            }
-
             return response;
+        }
+
+        private bool CheckPassword(string p)
+        {
+            var result = false;
+
+            if (p.Contains("ballyglasscomment"))
+                result = true;
+
+            return result;
+
+            
         }
 
         private int AddTestimonialToDB(Testimonial testimonial)
@@ -136,7 +164,7 @@ namespace BallyglassWebApi.Controllers
 
             using (SqlConnection sqlConnection1 = new SqlConnection(connectionString))
             {
-
+                 
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.CommandText = "AddTestimonial";
@@ -145,12 +173,13 @@ namespace BallyglassWebApi.Controllers
 
                 sqlConnection1.Open();
 
-                cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = testimonial.Name;
-                cmd.Parameters.Add("@Comment", SqlDbType.VarChar).Value = testimonial.Comment;
-                cmd.Parameters.Add("@Date", SqlDbType.VarChar).Value = testimonial.Date;
+                cmd.Parameters.Add("@Name", SqlDbType.VarChar, 50).Value = testimonial.Name;
+                cmd.Parameters.Add("@Comment", SqlDbType.VarChar, 150).Value = testimonial.Comment;
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar, 50).Value = testimonial.Date;
 
 
-                result = (int)cmd.ExecuteScalar(); //cmd.ExecuteNonQuery() > 0;
+                result = (int)cmd.ExecuteScalar(); 
+                //result = (int)cmd.ExecuteNonQuery();
 
 
             }

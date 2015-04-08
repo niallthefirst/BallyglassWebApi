@@ -51,7 +51,7 @@
                     <li><button id="buttonLoadTestimonials" class="btn btn-primary btn-md navbar-btn">Testimonials</button></li>
                     <li><button id="buttonLoadCalendar" class="btn btn-primary btn-md navbar-btn">Bookings Calendar</button></li>
                     <li><button id="buttonLoadBookings" class="btn btn-primary btn-md navbar-btn">Bookings</button></li>
-
+                    <li><button id="buttonAddTestimonial" class="btn btn-primary btn-md navbar-btn">Add a new Testimonial</button></li>
                 </ul>
             </div>
         </div>
@@ -196,7 +196,13 @@
                 event.preventDefault();
                 loadContent('bookings.htm', drawCarousel);
             });
-
+            $("#buttonAddTestimonial").click(function (event) {
+                event.preventDefault();
+                //var newurl = window.location.hostname + "/" + "addtesimonial/";
+                //window.location.replace(newurl);
+                loadContent('addtestimonial.htm');
+            });
+            
 
             var loadContent = function (filename, callback) {
 
@@ -204,8 +210,9 @@
                     function () {
 
                         console.log("Loaded " + filename);
-                        
-                        callback();
+
+                        if (callback !== undefined)
+                            callback();
 
                     }
                 );

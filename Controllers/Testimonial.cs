@@ -11,5 +11,6 @@ namespace BallyglassWebApi.Controllers
         public string Comment { get; set; }
         public string Date { get; set; }
         public int ID { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -162,6 +162,7 @@
     <Content Include="styles\galleria.classic.css" />
     <Content Include="styles\mybootstrapstylesheet.css" />
     <Content Include="styles\stylesheet.css" />
+    <Content Include="addtestimonial.htm" />
     <Content Include="testimonials.htm" />
     <Content Include="todo.txt" />
     <Content Include="Web.config">
