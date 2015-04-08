@@ -1,0 +1,8 @@
+Testimonials - 
+				Form - 4 fields. Name, Year, Comment, password. 
+				store in db.
+				auto email request and notify.
+				Password generate and email.
+				Password submit and verify.
+Fix responsiveness, border.
+SFO - rename images.
