@@ -1,5 +1,4 @@
-﻿/// <reference path="jquery-1.9.0-vsdoc.js" />
-/// <reference path="jquery-1.9.0.js" />
+﻿/// <reference path="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
 
 var errorModule = (function () {
 

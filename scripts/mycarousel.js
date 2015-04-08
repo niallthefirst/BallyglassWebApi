@@ -1,6 +1,4 @@
-﻿/// <reference path="jquery-2.1.3.intellisense.js" />
-/// <reference path="jquery-2.1.3.js" />
-
+﻿/// <reference path="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
 
 //$(document).ready(function () {
 
