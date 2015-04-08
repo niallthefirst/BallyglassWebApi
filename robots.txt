@@ -1,8 +1,8 @@
-﻿User-agent: *
-Disallow: /Content
-Disallow: /css
-Disallow: /js
-Disallow: /packages
-Disallow: /resources
-Disallow: /scripts
-Disallow: /styles
+User-agent: *
+Disallow: http://www.ballyglassthatchedcottage.com/Content
+Disallow: http://www.ballyglassthatchedcottage.com/css
+Disallow: http://www.ballyglassthatchedcottage.com/js
+Disallow: http://www.ballyglassthatchedcottage.com/packages
+Disallow: http://www.ballyglassthatchedcottage.com/resources
+Disallow: http://www.ballyglassthatchedcottage.com/scripts
+Disallow: http://www.ballyglassthatchedcottage.com/styles

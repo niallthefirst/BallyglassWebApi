@@ -1,8 +1,9 @@
 Testimonials - 
 				Form - 4 fields. Name, Year, Comment, password. 
-				store in db.
-				auto email request and notify.
+				Store in db.
 				Password generate and email.
+				Auto email request and notify.
 				Password submit and verify.
-Fix responsiveness, border.
+				Show testimonial on Facebook.
+Webmaster analysis.
 SFO - rename images.
