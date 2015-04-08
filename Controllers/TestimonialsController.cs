@@ -95,6 +95,8 @@ namespace BallyglassWebApi.Controllers
         }
 
         // POST api/<controller>
+        //http://localhost:20487/api/Testimonials
+        //{"Name":"test","Comment":"test comment","Date":"4014","Password":"ddddballyglasscomment"}
         public string Post([FromBody]Testimonial value)
         {
             string response = "Failed to add testimonial.";
