@@ -1,0 +1,15 @@
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\BallyglassWebApiTests.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\BallyglassWebApiTests.pdb
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\BallyglassWebApi.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Web.Http.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\BallyglassWebApi.pdb
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Web.Http.xml
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\obj\Debug\BallyglassWebApiTests.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\obj\Debug\BallyglassWebApiTests.dll
+D:\Documents\GitHub\BallyglassWebApi\BallyglassWebApiTests\obj\Debug\BallyglassWebApiTests.pdb

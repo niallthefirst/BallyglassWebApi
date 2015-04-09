@@ -155,6 +155,7 @@
     <Content Include="scripts\mycarousel.js" />
     <Content Include="scripts\myerrors.js" />
     <Content Include="scripts\myfacebook.js" />
+    <Content Include="scripts\myaddtestimonials.js" />
     <Content Include="scripts\mytestimonials.js" />
     <Content Include="scripts\npm.js" />
     <Content Include="sitemap.xml" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <Compile Include="Admin\ErrorHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EncryptDecrypt.cs" />
     <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Controllers\Testimonial.cs" />
     <Compile Include="Controllers\TestimonialsController.cs" />

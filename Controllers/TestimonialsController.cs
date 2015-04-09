@@ -176,7 +176,7 @@ namespace BallyglassWebApi.Controllers
                 sqlConnection1.Open();
 
                 cmd.Parameters.Add("@Name", SqlDbType.VarChar, 50).Value = testimonial.Name;
-                cmd.Parameters.Add("@Comment", SqlDbType.VarChar, 150).Value = testimonial.Comment;
+                cmd.Parameters.Add("@Comment", SqlDbType.VarChar, 400).Value = testimonial.Comment;
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar, 50).Value = testimonial.Date;
 
 
