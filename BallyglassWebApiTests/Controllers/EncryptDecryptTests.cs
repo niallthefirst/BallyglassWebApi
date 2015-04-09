@@ -13,11 +13,11 @@ namespace BallyglassWebApi.Controllers.Tests
         [TestMethod()]
         public void EncryptTest()
         {
-            EncryptDecrypt encryptDecrypt = new EncryptDecrypt();
-            var expected = "user name,email@email.com,1/2/2011";
-            var cypher = encryptDecrypt.Encrypt(expected);
+            
+            var expected = "niallfallon|nfallon@yahoo.com|2011";
+            var cypher = EncryptDecrypt.Encrypt(expected);
 
-            var actual = encryptDecrypt.Decrypt(cypher);
+            var actual = EncryptDecrypt.Decrypt(cypher);
 
             Assert.AreEqual(expected, actual);
         }

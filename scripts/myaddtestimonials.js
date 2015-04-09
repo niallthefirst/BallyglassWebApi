@@ -30,46 +30,55 @@
 var addTestimonialModule = (function () {
 
     //Privates
+    function decrypt(cypher) {
+        $.ajax({
+            dataType: "json",
+            url: 'api/EncryptDecrypt/?cypher=' + cypher,
+            type: 'GET',
+
+        })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                errorModule.Write("fail " + errorThrown);
+            })
+            .done(function (data, textStatus, jqXHR) {
+    
+                if (data == undefined || data == null)
+                    errorModule.Write("Error, query string does not contain correct user details. " + data);
+
+                populateControls(data);
+            }
+        );
+    }
+
+
     function draw() {
-        //http://localhost:20487/index.htm?niall%20fallon|nfallon2002@yahoo.com|2011
+        //http://localhost:20487/index.htm?oi3O2UZtGo3VjfKW9w7NHB1i35o5M6PmmwJn9NkOamxdCBkNHwC1687mBUPf46bn
         var cypher = getQueryString();
         if (cypher == undefined) 
             errorModule.Write("Error, query string is required, none found.");
 
 
-        var decrypted = decodeURI(cypher);//todo replace with real C# Decode.
+        decrypt(cypher);//todo replace with real C# Decode.
 
-        var userDetails = processQueryString(decrypted);
-
-        if (userDetails == undefined || userDetails == null)
-            errorModule.Write("Error, query string does not contain correct user details. " + userDetails);
-
-        populateControls(userDetails);
+        
 
     }
+
     function getQueryString() {
         var cypher = document.URL.split('?')[1];
         return cypher;
         
     }
 
-    function processQueryString(decrypted) {
-        var userEntries = decrypted.split('|');
-        return userEntries;
-    }
-
-    function populateControls(qString) {
-        var name = qString[0];
-        var email = qString[1];
-        var date = qString[2];
-
+    function populateControls(testimonial) {
+        
         var nameControl = $("#Name");
         var emailControl = $("#Email");
         var dateControl = $("#Date");
 
-        nameControl.val(name);
-        emailControl.val(email);
-        dateControl.val(date);
+        nameControl.val(testimonial.Name);
+        //emailControl.val(email);
+        dateControl.val(testimonial.Date);
     }
 
     return {
