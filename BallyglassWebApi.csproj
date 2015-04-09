@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="generatetestimonialemail.htm" />
     <Content Include="App_Data\Testimonials.mdf" />
     <Content Include="App_Data\Testimonials_log.ldf">
       <DependentUpon>Testimonials.mdf</DependentUpon>
@@ -173,8 +174,9 @@
   <ItemGroup>
     <Compile Include="Admin\ErrorHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\EncryptDecrypt.cs" />
-    <Compile Include="Controllers\EncryptDecryptController.cs" />
+    <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Controllers\Testimonial.cs" />
     <Compile Include="Controllers\TestimonialsController.cs" />

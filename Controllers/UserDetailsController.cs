@@ -8,15 +8,15 @@ using BallyglassWebApi.Admin;
 
 namespace BallyglassWebApi.Controllers
 {
-    public class EncryptDecryptController : ApiController
+    public class UserDetailsController : ApiController
     {
-        // GET: api/EncryptDecrypt
+        // GET: api/UserDetails
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/EncryptDecrypt/?cypher=oi3O2UZtGo3VjfKW9w7NHB1i35o5M6PmmwJn9NkOamxdCBkNHwC1687mBUPf46bn
+        // GET: api/UserDetails/?cypher=oi3O2UZtGo3VjfKW9w7NHB1i35o5M6PmmwJn9NkOamxdCBkNHwC1687mBUPf46bn
         //original string must be encoded first to remove whitepace or else the Decrypt breaks.
         public Testimonial Get(string cypher)
         {
@@ -44,17 +44,17 @@ namespace BallyglassWebApi.Controllers
             return null;
         }
 
-        // POST: api/EncryptDecrypt
+        // POST: api/UserDetails
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/EncryptDecrypt/5
+        // PUT: api/UserDetails/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/EncryptDecrypt/5
+        // DELETE: api/UserDetails/5
         public void Delete(int id)
         {
         }

@@ -96,50 +96,42 @@ namespace BallyglassWebApi.Controllers
 
         // POST api/<controller>
         //http://localhost:20487/api/Testimonials
+        //Content-Type: text/json
         //{"Name":"test","Comment":"test comment","Date":"4014","Password":"ddddballyglasscomment"}
         public string Post([FromBody]Testimonial value)
         {
             string response = "Failed to add testimonial.";
 
-            if (value.Password == null)
-            {
-                response = "Failed to Add Testimonial. Password required. This should have been emailed to you. Contact ballyglasscottage@gmail.com.";
 
+            if (value != null && value.Name != null)
+            {
+                int newID = -1;
+                try
+                {
+                    newID = AddTestimonialToDB(value);
+
+                    if (newID >= 0)
+                    {
+                        value.ID = newID;
+
+                        response = string.Format("Successfully added testimonial {0}, {1}. Thankyou {2}. ", value.ID, value.Comment, value.Name);
+
+                    }
+                    else
+                    {
+                        ErrorHandler.Write("Error adding the Testimonial.");
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    ErrorHandler.Write("Error adding the Testimonial.", ex);
+                }
             }
             else
-            {
-                bool passwordPassed = CheckPassword(value.Password);
-                if (passwordPassed)
-                {
-                    int newID = -1;
-                    try
-                    {
-                        newID = AddTestimonialToDB(value);
-
-                        if (newID >= 0)
-                        {
-                            value.ID = newID;
-
-                            response = string.Format("Successfully added testimonial {0}, {1}. Thankyou {2}. ", value.ID, value.Comment, value.Name);
-
-                        }
-                        else
-                        {
-                            ErrorHandler.Write("something went wrong");
-
-
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        ErrorHandler.Write("something went wrong", ex);
-                    }
-                }
-                else
-                {
-                    response = "Failed to Add Testimonial. Password is not valid or has been used before. This should have been emailed to you. Contact ballyglasscottage@gmail.com.";
-                }
-            }
+                ErrorHandler.Write("Error adding the Testimonial. No Name for testimonial.");
+            
             return response;
         }
 
