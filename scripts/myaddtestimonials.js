@@ -31,9 +31,13 @@ var addTestimonialModule = (function () {
 
     //Privates
     function draw() {
+        //http://localhost:20487/index.htm?niall%20fallon|nfallon2002@yahoo.com|2011
         var cypher = getQueryString();
+        if (cypher == undefined) 
+            errorModule.Write("Error, query string is required, none found.");
 
-        var decrypted = decodeURI(cypher);
+
+        var decrypted = decodeURI(cypher);//todo replace with real C# Decode.
 
         var userDetails = processQueryString(decrypted);
 
@@ -45,11 +49,8 @@ var addTestimonialModule = (function () {
     }
     function getQueryString() {
         var cypher = document.URL.split('?')[1];
-        if (cypher != undefined) {
-            return cypher;
-        }
-        else
-            errorModule.Write("Error, query string is required, none found.");
+        return cypher;
+        
     }
 
     function processQueryString(decrypted) {
@@ -73,7 +74,8 @@ var addTestimonialModule = (function () {
 
     return {
         //Publics
-        Draw: draw
+        Draw: draw,
+        GetQueryString: getQueryString
      
 
     };
