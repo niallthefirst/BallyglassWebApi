@@ -1,7 +1,7 @@
 ﻿/* File Created: December 19, 2014 */
 body {
 	
-	font-family: 'EB Garamond', serif;
+	font-family: 'Montaga', serif;
 	
 	font-weight: 400;
 	font-style: normal;
@@ -9,12 +9,14 @@ body {
 	color: #808080;
 	line-height: 30px;
 	
-
-	border-left: 50px solid #ECECEA;
+    border-left: 50px solid #ECECEA;
 	border-right: 50px solid #ECECEA;
-	
 	background-color:#F5F1EC;
-	 
+	
+	
+	
+
+	
 }
 
 #main
@@ -45,7 +47,8 @@ body {
 	
 h1
 {
-	font-family: 'Great Vibes', cursive;
+	/*font-family: 'Great Vibes', cursive;*/
+    /*font-family: 'Lobster Two', cursive;*/
 	font-weight:bold;
 }
 h2
@@ -144,10 +147,19 @@ article section
 	font-size:large;
 }
 
+article header
+{
+	font-size:x-large;
+    font-weight:bold;
+     padding-bottom: 30px;
+    display: block;
+    
+}
 article footer
 {
 	font-size:large;
 }
+
 
 	
 #bookingsmaintext, #calendarmaintext

@@ -1,12 +1,7 @@
 Testimonials - 
 				Email and url generation. url + encrypted string.
-				url contains the unique id.
-				3 fields. Name, Year, Comment. 
-				Store in db.
-				Password generate and email.
-				Admin password for myself to use.
 				Auto email request and notify.
-				Password submit and verify.
 				Show testimonial on Facebook.
 Webmaster analysis.
-SFO - rename images, change search criteria, "Holiday home in ireland", "ireland holiday home", "luxury holiday home", "cottage in ireland", "luxury cottage".
+SEO - rename images.
+Map.
