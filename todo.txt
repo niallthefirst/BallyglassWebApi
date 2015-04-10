@@ -3,5 +3,8 @@ Testimonials -
 				Auto email request and notify.
 				Show testimonial on Facebook.
 Webmaster analysis.
-SEO - rename images.
 Map.
+Mobile design
+	Add small image to top of header.
+	Resize the images and carousel to take full width in mobile.
+	Reduce or remove the border for mobile.
