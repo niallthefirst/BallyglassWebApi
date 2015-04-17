@@ -11,14 +11,21 @@ namespace BallyglassWebApi.Admin
     public class ErrorHandler
     {
         public static void Write(string message)
-        { }
+        {
+            CreateErrorResponse(message, null);
+        }
 
         public static void Write(string message, Exception ex)
         {
+            CreateErrorResponse(message, ex);
+        }
+
+        private static void CreateErrorResponse(string message, Exception ex)
+        {
             var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
             {
-                Content = new StringContent(message),
-                ReasonPhrase = ex.Message
+                Content = new StringContent(message)
+  
             };
             throw new HttpResponseException(resp);
         }

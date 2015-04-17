@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\emailguest.html" />
     <Content Include="generatetestimonialemail.htm" />
     <Content Include="App_Data\Testimonials.mdf" />
     <Content Include="App_Data\Testimonials_log.ldf">
@@ -172,6 +173,7 @@
     <Content Include="scripts\myerrors.js" />
     <Content Include="scripts\myfacebook.js" />
     <Content Include="scripts\myaddtestimonials.js" />
+    <Content Include="scripts\myemail.js" />
     <Content Include="scripts\mytestimonials.js" />
     <Content Include="scripts\npm.js" />
     <Content Include="sitemap.xml" />
@@ -189,6 +191,7 @@
     <Compile Include="Admin\ErrorHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\EmailSender.cs" />
     <Compile Include="Controllers\EncryptDecrypt.cs" />
     <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Controllers\ImagesController.cs" />

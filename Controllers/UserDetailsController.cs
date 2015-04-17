@@ -30,12 +30,19 @@ namespace BallyglassWebApi.Controllers
                 if (userDetails == null)
                     ErrorHandler.Write("Could not decrpyt. Cypher is empty.");
 
-                var name = userDetails[0];
-                var email = userDetails[1];
-                var date = userDetails[2];
+                if (userDetails.Length > 0)
+                {
+                    string name, email, date;
+                    if (userDetails.Length > 1)
+                        name = userDetails[0];
+                    if (userDetails.Length > 2)
+                        email = userDetails[1];
+                    if (userDetails.Length > 3)
+                        date = userDetails[2];
 
-                var result = new Testimonial() { Name = name, Date = date };
-                return result;
+                    var result = new Testimonial() { Name = name, Date = date };
+                    return result;
+                }
             }
             catch (Exception e)
             {

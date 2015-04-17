@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin only - Generate Email</title>
+    
+</head>
+<body>
+
+    <span id="success"></span>
+
+    <form role="form" id="emailForm">
+            <label class="control-label" for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Name">
+
+            <label class="control-label" for="Name">Email</label>
+            <input type="email" id="Email" placeholder="Email">
+
+            <label class="control-label" for="Name">Date</label>
+            <input type="text"  id="Date" placeholder="Date">
+
+            
+
+            <button type="submit" >Submit</button>
+    </form>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../scripts/myerrors.js"></script>
+    <script src="../scripts/myemail.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //bind submit to Post. 
+            //Post Guest Name, Email and Date to EmailController
+            emailModule.Setup();
+
+
+        });
+
+    </script>
+</body>
+</html>

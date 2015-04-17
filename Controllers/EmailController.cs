@@ -23,14 +23,15 @@ namespace BallyglassWebApi.Controllers
         }
 
         // POST: api/Email
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Testimonial testimonial)
         {
             try
             {
-                var encrypted = EncryptDecrypt.Encrypt(value);
-                string url = Request.RequestUri.Host + encrypted;
+               
                 //Generate email.
-                //send success response.
+                EmailSender.Send(testimonial, Request.RequestUri.Host);
+                
+                
             }
             catch (Exception e)
             {
