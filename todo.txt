@@ -4,9 +4,15 @@ Testimonials -
 				Embed html page in email with Tripadvisor etc.
 				Show testimonial on Facebook.
 				Make admin password a field.
+
+
 Webmaster analysis.
 Map.
 Mobile design
 	Add small image to top of header.
 Style the app to be more tiles. see hogansirishcottages.com
-	
+Randomize photo carousel.
+Move carousel to top of page.
+Make single page version, renders when page moves down.
+Make single static page with static images and text.	
+Tile the style.
