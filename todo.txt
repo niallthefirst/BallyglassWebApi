@@ -1,9 +1,12 @@
 Testimonials - 
 				Email and url generation. url + encrypted string.
 				Auto email request and notify.
+				Embed html page in email with Tripadvisor etc.
 				Show testimonial on Facebook.
+				Make admin password a field.
 Webmaster analysis.
 Map.
 Mobile design
 	Add small image to top of header.
+Style the app to be more tiles. see hogansirishcottages.com
 	
