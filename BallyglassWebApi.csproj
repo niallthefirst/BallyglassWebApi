@@ -195,7 +195,7 @@
     <Content Include="sitemap.xml" />
     <Content Include="styles\bootstrapstylesheet.css" />
     <Content Include="styles\galleria.classic.css" />
-    <Content Include="styles\mybootstrapstylesheet.css" />
+    <Content Include="styles\mystylesheet.css" />
     <Content Include="addtestimonial.htm" />
     <Content Include="testimonials.htm" />
     <Content Include="todo.txt" />

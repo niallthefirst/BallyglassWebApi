@@ -9,20 +9,19 @@ body {
 	color: #808080;
 	line-height: 1.5em;
 	
-    /*border-left: 50px solid #ECECEA;
-	border-right: 50px solid #ECECEA;*/
 	background-color:#F5F1EC;
-	
-	
-	
 
-	
 }
 
 #main
 {
 	margin:1%;
 }
+
+/*#region Text*/
+
+
+
 #toparticletext
 {
 	margin:1%;
@@ -40,40 +39,6 @@ body {
 	background-color:#E2DBD3;
 	}
 
-.headerimage
-{
-	margin:1%;
-}
-	
-h1
-{
-	/*font-family: 'Great Vibes', cursive;*/
-    /*font-family: 'Lobster Two', cursive;*/
-	font-weight:bold;
-}
-h2
-{
-	font-weight:bold;
-}
-h3
-{
-	font-weight:bold;
-}
-h4
-{
-	font-weight:bold;
-}
-
-.carousel 
-{
-		
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    
-}
-
-
 aside > article > address
 {
 	font-size:medium;
@@ -84,22 +49,13 @@ address > #phone
 {
 	color:#97BF0D;
 }
-.facebooklogo
-{
-	margin:0.5%;
-	max-width:80px;
-	padding:0px;
-	}
+
 
 .sitefooter
 {
 	margin-top:1%;
 	font-size:small;
 }	
-header {
-	font-weight: 200;
-	
-}
 
 .sleepssix	
 {
@@ -168,3 +124,80 @@ article footer
 	padding:2%;
 	background-color:#E2DBD3;
 	}        
+	
+/*#endregion Text*/
+
+
+
+
+/*#region Images*/
+.headerimage
+{
+	margin:1%;
+}
+
+
+.facebooklogo
+{
+	margin:0.5%;
+	max-width:80px;
+	padding:0px;
+	}
+
+.carousel 
+{
+		
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    
+}
+
+/*#endregion Images*/
+
+
+
+
+
+
+
+
+/*#region Headers*/
+
+h1
+{
+	font-weight:bold;
+}
+h2
+{
+	font-weight:bold;
+}
+h3
+{
+	font-weight:bold;
+}
+h4
+{
+	font-weight:bold;
+}
+
+
+header {
+	font-weight: 200;
+}
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 12pt;
+  }
+   h2 {
+    font-size: 10pt;
+  }
+    h3 {
+    font-size: 8pt;
+  }
+}
+
+/*#endregion Headers*/
+
+
