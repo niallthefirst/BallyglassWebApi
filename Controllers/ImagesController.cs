@@ -13,10 +13,17 @@ namespace BallyglassWebApi
         // GET api/images
         public IEnumerable<string> Get()
         {
-            var localImagesPath = Directory.GetFiles(System.Web.HttpContext.Current.Server.MapPath("~/images/carousel"));
+            string[] localImagesPath = Directory.GetFiles(System.Web.HttpContext.Current.Server.MapPath("~/images/carousel"));
+            
             var websiteRoot = System.Web.HttpContext.Current.Server.MapPath("~");
 
-            var relativeImages = localImagesPath.Select(local => local.Substring(websiteRoot.Length, local.Length - websiteRoot.Length));
+            return RandonlySortImageUrls(localImagesPath, websiteRoot);
+        }
+
+        private static IEnumerable<string> RandonlySortImageUrls(string[] localImagesPath, string websiteRoot)
+        {
+            Random random = new Random();
+            var relativeImages = localImagesPath.Select(local => local.Substring(websiteRoot.Length, local.Length - websiteRoot.Length)).OrderBy(x => random.Next());
 
             return relativeImages;
         }

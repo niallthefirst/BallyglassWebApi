@@ -32,7 +32,7 @@ namespace BallyglassWebApi.Controllers
 
                 if (userDetails.Length > 0)
                 {
-                    string name, email, date;
+                    string name = string.Empty, email = string.Empty, date = string.Empty;
                     if (userDetails.Length > 1)
                         name = userDetails[0];
                     if (userDetails.Length > 2)
