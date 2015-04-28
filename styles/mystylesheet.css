@@ -20,18 +20,21 @@ body {
 
 /*#region Text*/
 
-
+#social ul li {
+    display:inline-block;
+    list-style:none;
+}
 
 #toparticletext
 {
-	margin:1%;
+	/*margin:1%;*/
 	background-color:#E2DBD3;
 	text-align:center;
 }
 
 #weeklongsstays
 {
-	padding:1%;
+	/*padding:1%;*/
 	}
 #bookingsmaintext
 {
@@ -151,6 +154,14 @@ article footer
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     
+}
+
+@media(max-width: 480px) {
+    img {
+        	max-width:3em;
+	        
+
+    }
 }
 
 /*#endregion Images*/
