@@ -12,3 +12,17 @@ D:\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.WebHost.xml
 D:\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.dll
 D:\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.pdb
 D:\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.csprojResolveAssemblyReference.cache
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\BallyglassWebApi.dll.config
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\BallyglassWebApi.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\BallyglassWebApi.pdb
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\Newtonsoft.Json.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\Newtonsoft.Json.xml
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.xml
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.csprojResolveAssemblyReference.cache
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.dll
+C:\Users\nfallon\Documents\GitHub\BallyglassWebApi\obj\Debug\BallyglassWebApi.pdb

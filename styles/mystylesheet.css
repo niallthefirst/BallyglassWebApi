@@ -156,11 +156,9 @@ article footer
     
 }
 
-@media(max-width: 480px) {
-    img {
-        	max-width:3em;
-	        
-
+@media(min-width: 600px) {
+    small-image {
+       	width:80px;
     }
 }
 

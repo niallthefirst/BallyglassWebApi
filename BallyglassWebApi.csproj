@@ -197,6 +197,7 @@
     <Content Include="styles\galleria.classic.css" />
     <Content Include="styles\mystylesheet.css" />
     <Content Include="addtestimonial.htm" />
+    <Content Include="styles\textinimage.css" />
     <Content Include="testimonials.htm" />
     <Content Include="todo.txt" />
     <Content Include="Web.config">
