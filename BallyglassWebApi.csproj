@@ -129,7 +129,6 @@
     <Content Include="images\carousel\holiday cottage bike.jpg" />
     <Content Include="images\carousel\holiday cottage ireland bike.jpg" />
     <Content Include="images\carousel\holiday home cottage ireland 019.jpg" />
-    <Content Include="images\carousel\househogans.jpg" />
     <Content Include="images\carousel\IMG_1966.jpg" />
     <Content Include="images\carousel\IMG_1986.jpg" />
     <Content Include="images\carousel\IMG_2748.jpg" />
@@ -183,6 +182,7 @@
     <Content Include="robots.txt" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\freewall.js" />
     <Content Include="scripts\galleria-1.2.9.min.js" />
     <Content Include="scripts\galleria.classic.js" />
     <Content Include="scripts\galleria.classic.min.js" />

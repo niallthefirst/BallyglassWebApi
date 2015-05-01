@@ -39,25 +39,43 @@
     </div>-->
 
 
-    <div class="jumbotron text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col col-xs-12 col-sm-6">
-                    <div class="image">
-                        <img src="images/carousel/hogans irish cottage.jpg" class="img-responsive" />
-                        <h1><span>Ballyglass Thatched Cottage<span class='spacer'>&nbsp;</span><br /><span class='spacer'>&nbsp;</span></span></h1>
-                    </div>
-                </div>
-                <div class="col col-xs-12 col-sm-6">
-                    <div class="image">
-                        <img src="images/carousel/hogans irish cottage.jpg" class="img-responsive" />
-                        <h2><span>Luxury Holiday Cottage in Ireland<span class='spacer'>&nbsp;</span><br /><span class='spacer'>&nbsp;</span>Holiday Home in Ireland </span></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
+        <div class="jumbotron text-center container image" id="container">
+            <div class="item">
 
+                <img src="images/carousel/ballyglass cottage front.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/ballyglass irish thatched cottage bedroom.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/luxury holiday thatched cottage 10.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/thatched cottage.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/ballyglassupstairs.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/holiday cottage ireland bike.jpg" />
+            </div>
+            <div class="item">
+
+                <img src="images/carousel/cottage in ireland with high nelly.jpg" />
+            </div>
+
+            <h1><span>Ballyglass Thatched Cottage<span class='spacer'>&nbsp;</span><br /><span class='spacer'>&nbsp;</span></span></h1>
+            <h2><span>Luxury Holiday Cottage in Ireland<span class='spacer'>&nbsp;</span><br /><span class='spacer'>&nbsp;</span>Holiday Home in Ireland </span></h2>
+        </div>
+                
+        
+    
 
     <div class="container">
 
@@ -193,10 +211,17 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="scripts/mytestimonials.js"></script>
-
+    <script src="scripts/freewall.js"></script>
     <script type="text/javascript">
 
     $(document).ready(function () {
+
+        function drawImageGrid()
+        {
+            var wall = new freewall("#container");
+            wall.fitWidth();
+            
+        }
 
         function loadContent(filename, callback) {
 
@@ -261,7 +286,7 @@
 
 
 
-
+        drawImageGrid();
         drawCarouselAndRotatingTestimonial();
 
 
