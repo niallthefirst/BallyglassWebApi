@@ -9,14 +9,14 @@
     width: 100%;
 }
 
-h2 {
+h1, h2 {
     position: absolute;
-    top: 8pc;/*location of text*/
+    top: 15pc;/*location of text*/
     left: 0;
     width: 100%;
 }
 
-    h2 span {
+    h1, h2 span {
         color: white;
         font: bold 24px/45px Helvetica, Sans-Serif;
         letter-spacing: -1px;
@@ -25,7 +25,7 @@ h2 {
         padding: 10px;
     }
 
-        h2 span.spacer {
+        h1, h2 span.spacer {
             padding: 0 2px;
             background: none;
         }
