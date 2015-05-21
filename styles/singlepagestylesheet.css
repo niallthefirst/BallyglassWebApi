@@ -12,12 +12,6 @@ body {
 	background-color:#F5F1EC;
 
 }
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
 
 #main
 {
@@ -28,21 +22,16 @@ body {
 
 
 
-/*#social ul li {
-    display:inline-block;
-    list-style:none;
-}*/
-
 #toparticletext
 {
-	/*margin:1%;*/
+	margin:1%;
 	background-color:#E2DBD3;
 	text-align:center;
 }
 
 #weeklongsstays
 {
-	/*padding:1%;*/
+	padding:1%;
 	}
 #bookingsmaintext
 {
@@ -142,18 +131,6 @@ article footer
 
 
 /*#region Images*/
-
-#container {
-    width: 80%;
-    margin: auto;
-}
-
-.item {
-    background: rgb(135, 199, 135);
-    width: 320px;
-    height: 320px;
-}
-
 .headerimage
 {
 	margin:1%;
@@ -174,12 +151,6 @@ article footer
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     
-}
-
-@media(max-width: 480px) {
-    small-image {
-       	width:80px;
-    }
 }
 
 /*#endregion Images*/
@@ -228,5 +199,3 @@ header {
 }
 
 /*#endregion Headers*/
-
-
