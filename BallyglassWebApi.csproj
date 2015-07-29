@@ -177,8 +177,6 @@
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.js" />
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.min.js" />
     <None Include="packages\jQuery.1.9.0\Tools\jquery-1.9.0.intellisense.js" />
-    <Content Include="resources\datajson.js" />
-    <Content Include="resources\dataraw.js" />
     <Content Include="robots.txt" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
