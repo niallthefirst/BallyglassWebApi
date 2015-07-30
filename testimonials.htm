@@ -4,9 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ballyglass Irish Thatched Cottage - Holiday Cottage Ireland - Testimonials</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
-    <link href="styles/mystylesheet.css" rel="stylesheet" type="text/css" />
+   
+   
 
 
     <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
@@ -21,7 +20,71 @@
 
 </head>
 <body>
-    
+    <header role="banner" class="container-fluid col-md-6">
+        <h1>Ballyglass Thatched Cottage</h1>
+        <h2>Luxury Holiday Cottage in Ireland</h2>
+        <h3>Holiday Home in Ireland</h3>
+    </header>
+    <footer role="contentinfo" class="col-md-4 sitefooter">
+        <address>
+            Ballyglass Irish Thatched Cottage,
+            Ballyglass, Knockcroghery, Co.Roscommon, F42 HN79,
+            Ireland.
+            <br />
+            <abbr title="Phone">(00353) 086-8249774</abbr>
+        </address>
+        <address>
+            <a href="mailto:#">ballyglasscottage@gmail.com</a>
+        </address>
+    </footer>
+    <a href="https://www.facebook.com/pages/Ballyglass-Thatched-Cottage/1543236135926924">
+        <img src="images/icons/facebook.jpg" class="col-md-1 facebooklogo" title="Facebook" alt="Like us on Facebook" />
+    </a>
+
+    <a href="http://www.tripadvisor.ie/VacationRentalReview-g315887-d2261760-BALLYGLASS_THATCHED_COTTAGE_pet_friendly_character_holiday_cottage_with_a_garden_in_Ro.html">
+        <img src="images/icons/tripadvisor.jpg" class="col-md-1 facebooklogo" title="Tripadvisor" alt="Find us in Tripadvisor" />
+    </a>
+    <a href="http://www.hogansirishcottages.com/cottage/County-Galway-Knockcroghery/Ballyglass-Thatched-Cottage-10139.html">
+        <img src="images/icons/hogans.jpg" class="col-md-1 facebooklogo" title="Hogans" alt="Find us on Hogans Cottages" />
+    </a>
+
+
+    <nav class="navbar mynavbar col-md-12">
+        <div class="container-fluid">
+            <!--<div class="navbar-header">
+                <a class="navbar-brand" href="#">Ballyglass Thatched Cottage</a>
+            </div>-->
+            <div>
+                <ul class="nav navbar-nav ">
+                    <li ><a href="index.htm" id="buttonLoadIndex" class="btn btn-primary btn-md navbar-btn" role="button">Home</a></li>
+                    <li class="active"><a href="testimonials.htm" id="buttonLoadTestimonials" class="btn btn-primary btn-md navbar-btn" role="button">Testimonials</a></li>
+                    <li><a href="calendar.htm" id="buttonLoadCalendar" class="btn btn-primary btn-md navbar-btn" role="button">Bookings Calendar</a></li>
+                    <li><a href="bookings.htm" id="buttonLoadBookings" class="btn btn-primary btn-md navbar-btn" role="button">Bookings</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article id="toparticle" role="main" class="container-fluid col-md-12">
+        <img src="images/ballyglasscottagebackgroundcloseup.jpg" class="col-md-6 img-responsive row headerimage" alt="Ballyglass Irish Thatched Cottage" />
+
+
+        <section id="toparticletext" class="col-md-5 row">
+            <p>
+                Ballyglass cottage is an authentic Irish Thatched Cottage, approximately 150yrs old, which has been beautifully restored.
+            </p>
+            <p>
+                This is a Luxury cottage for holiday rental in Ireland.
+            </p>
+            <div id="weeklongsstays">
+                <p>Week long stays from just 250euro.</p>
+                <p>Sleeps 6.</p>
+                <p>Pet friendly.</p>
+            </div>
+        </section>
+    </article>
+
+    <!--******************-->
     <div id="main" class="container-fluid">
         <div class="row-fluid">
             <article id="testimonials" role="main" class="container-fluid row col-md-10">
@@ -38,7 +101,28 @@
                
         </div>
     </div>
-  
+    <!--******************-->
+
+    <link async href="Content/bootstrap.min.css" rel="stylesheet" type='text/css' />
+    <link async href="Content/bootstrap-theme.min.css" rel="stylesheet" type='text/css' />
+    <link async href="styles/mainstylesheet.css" rel="stylesheet" type='text/css' />
+    <link async href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script async src="scripts/bootstrap.min.js"></script>
+    
+    
+    <script src="scripts/mytestimonials.js"></script>
+    <script>
+
+        $(document).ready(function () {
+                
+            testimonialModule.DrawAllAtOnce();
+
+        });
+    </script>
+   
+    
 </body>
 
 </html>

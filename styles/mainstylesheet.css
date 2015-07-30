@@ -168,3 +168,10 @@ article footer
 	padding:2%;
 	background-color:#E2DBD3;
 	}        
+
+
+.nav>li>a:hover{
+    text-decoration:none;
+    background-color:#204d74;
+
+}

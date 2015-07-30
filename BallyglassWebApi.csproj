@@ -199,7 +199,6 @@
     <Content Include="scripts\mytestimonials.js" />
     <Content Include="scripts\npm.js" />
     <Content Include="sitemap.xml" />
-    <Content Include="styles\bootstrapstylesheet.css" />
     <Content Include="styles\galleria.classic.css" />
     <Content Include="styles\mainstylesheet.css" />
     <Content Include="styles\singlepagestylesheet.css" />
