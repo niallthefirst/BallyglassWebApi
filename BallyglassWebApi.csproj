@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\emailguest.html" />
+    <Content Include="credits.txt" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\ddsmoothmenu.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="css\slimbox2.css" />
+    <Content Include="css\templatemo_misc.css" />
+    <Content Include="css\templatemo_style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="generatetestimonialemail.htm" />
     <Content Include="App_Data\Testimonials.mdf" />
     <Content Include="App_Data\Testimonials_log.ldf">
@@ -148,6 +159,11 @@
     <Content Include="images\carousel\luxury holiday thatched cottage 10.jpg" />
     <Content Include="images\carousel\thatched cottage.jpg" />
     <Content Include="images\carousel\thatched irish cottage bike01.jpg" />
+    <Content Include="images\closelabel.gif" />
+    <Content Include="images\cottage_20in_20ireland_20bike.jpg" />
+    <Content Include="images\DSCN3546.jpg" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\hogans.jpg" />
     <Content Include="images\icons\classic-loader.gif" />
     <Content Include="images\icons\classic-map.png" />
     <Content Include="images\icons\facebook.jpg" />
@@ -162,8 +178,40 @@
     <Content Include="images\icons\loading.gif" />
     <Content Include="images\icons\tripadvisor.jpg" />
     <Content Include="images\icons\tripadvisorwide.jpg" />
-    <Content Include="indexSingle.htm" />
+    <Content Include="images\irish_20thatch_20cottage_20upstairs.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\next.png" />
+    <Content Include="images\nextlabel.gif" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\prevlabel.gif" />
+    <Content Include="images\slider\arrows.png" />
+    <Content Include="images\slider\img_1_blank.jpg" />
+    <Content Include="images\slider\img_2_blank.jpg" />
+    <Content Include="images\slider\img_3_blank.jpg" />
+    <Content Include="images\templatemo_blogimage01.jpg" />
+    <Content Include="images\templatemo_blogimage02.jpg" />
+    <Content Include="images\templatemo_blogimage03.jpg" />
+    <Content Include="images\templatemo_blogimage04.jpg" />
+    <Content Include="images\templatemo_logo.png" />
+    <Content Include="images\templatemo_reasonbg.jpg" />
+    <Content Include="images\tripadvisor.jpg" />
     <Content Include="index.htm" />
+    <Content Include="indexSingle.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\ddsmoothmenu.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.cycle2.carousel.js" />
+    <Content Include="js\jquery.cycle2.carousel.min.js" />
+    <Content Include="js\jquery.cycle2.js" />
+    <Content Include="js\jquery.cycle2.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.nivo.slider.pack.js" />
+    <Content Include="js\jquery.singlePageNav.js" />
+    <Content Include="js\slimbox2.js" />
+    <Content Include="js\stickUp.min.js" />
+    <Content Include="js\templatemo_custom.js" />
     <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.css" />
     <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap-theme.min.css" />
     <Content Include="packages\bootstrap.3.3.1\content\Content\bootstrap.css" />
@@ -174,6 +222,10 @@
     <Content Include="packages\bootstrap.3.3.1\content\Scripts\npm.js" />
     <Content Include="Admin\mla_export_Testimonials.csv" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0-vsdoc.js" />
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.js" />
     <Content Include="packages\jQuery.1.9.0\Content\Scripts\jquery-1.9.0.min.js" />
