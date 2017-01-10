@@ -187,9 +187,10 @@
     <Content Include="images\prev.png" />
     <Content Include="images\prevlabel.gif" />
     <Content Include="images\slider\arrows.png" />
-    <Content Include="images\slider\img_1_blank.jpg" />
-    <Content Include="images\slider\img_2_blank.jpg" />
-    <Content Include="images\slider\img_3_blank.jpg" />
+    <Content Include="images\slider\slider1.JPG" />
+    <Content Include="images\slider\slider2.JPG" />
+    <Content Include="images\slider\slider3.JPG" />
+    <Content Include="images\slider\slider4.JPG" />
     <Content Include="images\templatemo_blogimage01.jpg" />
     <Content Include="images\templatemo_blogimage02.jpg" />
     <Content Include="images\templatemo_blogimage03.jpg" />
