@@ -41,3 +41,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+obj/Debug/BallyglassWebApi.dll
+*.pdb
+*.cache
+obj/Debug/BallyglassWebApi.csproj.FileListAbsolute.txt
+*.cache
+*.scgdat
