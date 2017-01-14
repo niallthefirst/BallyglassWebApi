@@ -49,3 +49,8 @@ obj/Debug/BallyglassWebApi.csproj.FileListAbsolute.txt
 *.scgdat
 *.cache
 .vs/BallyglassWebApi/v14/.suo
+*.suo
+*.dll
+obj/Debug/BallyglassWebApi.pdb
+*.cache
+*.dll
