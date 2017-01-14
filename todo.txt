@@ -1,18 +1,16 @@
-Testimonials - 
-				Email and url generation. url + encrypted string.
-				Auto email request and notify.
-				Embed html page in email with Tripadvisor etc.
-				Show testimonial on Facebook.
-				Make admin password a field.
++Fix Slider images.
++Only show Calendar when section in view
++SEO
++Change DNS CNAME
++Testimonials -
+	Copy the content. Add a new page.	 
++Webmaster analysis.
++SEO
++Change CNAME
++Testimonials
+	Email and url generation. url + encrypted string.
+	Auto email request and notify.
+	Embed html page in email with Tripadvisor etc.
+	Show testimonial on Facebook.
+	Make admin password a field.
 
-
-Webmaster analysis.
-Map.
-Single Page App
-	Mobile design
-		Add small image to top of header.
-	Style the app to be more tiles. see hogansirishcottages.com
-	Move carousel to top of page.
-	Make single page version, renders when page moves down.
-	Make single static page with static images and text.	
-	Tile the style.
