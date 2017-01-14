@@ -1,4 +1,5 @@
-+Fix Slider images.
+
++Fix header image. narrow or split into 3. or just use text.
 +Only show Calendar when section in view
 +SEO
 +Change DNS CNAME
