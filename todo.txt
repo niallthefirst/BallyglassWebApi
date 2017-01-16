@@ -1,13 +1,14 @@
 
 +Fix header image. narrow or split into 3. or just use text.
-+Only show Calendar when section in view
++Fix links to hogans, facebook and tripadvisor.
 +SEO
-+Change DNS CNAME
++Webmaster analysis.
++Sitemap.
++Get images showing in google.
++Only show Calendar when section in view.
 +Testimonials -
 	Copy the content. Add a new page.	 
-+Webmaster analysis.
-+SEO
-+Change CNAME
+
 +Testimonials
 	Email and url generation. url + encrypted string.
 	Auto email request and notify.
