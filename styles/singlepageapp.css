@@ -1,0 +1,13 @@
+﻿.facebooklogo
+{
+	margin:0.5%;
+    min-width:50px;
+	max-width:80px;
+	padding:3px;
+
+    
+}
+.facebooklogo:hover
+{
+   border: 1px solid gray;
+}

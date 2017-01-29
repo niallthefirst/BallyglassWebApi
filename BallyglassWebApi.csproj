@@ -109,6 +109,17 @@
     <Content Include="images\ballyglass_logo2.png" />
     <Content Include="images\bglogo.jpg" />
     <Content Include="images\carousel\ballyglass 015.jpg" />
+    <Content Include="images\carousel\h_01.jpg" />
+    <Content Include="images\carousel\h_02.jpg" />
+    <Content Include="images\carousel\h_09.jpg" />
+    <Content Include="images\carousel\h_10.jpg" />
+    <Content Include="images\carousel\h_13.jpg" />
+    <Content Include="images\carousel\h_15.jpg" />
+    <Content Include="images\carousel\h_17.jpg" />
+    <Content Include="images\carousel\h_18.jpg" />
+    <Content Include="images\carousel\h_19.jpg" />
+    <Content Include="images\carousel\h_20.jpg" />
+    <Content Include="images\carousel\h_23.jpg" />
     <Content Include="images\carousel\irish thatched cottage.jpg" />
     <Content Include="images\carousel\ballyglass irish thatched cottage bedroom.jpg" />
     <Content Include="images\carousel\ballyglass living room.jpg" />
@@ -259,6 +270,7 @@
     <Content Include="scripts\npm.js" />
     <Content Include="sitemap.xml" />
     <Content Include="styles\galleria.classic.css" />
+    <Content Include="styles\singlepageapp.css" />
     <Content Include="styles\mainstylesheet.css" />
     <Content Include="styles\singlepagestylesheet.css" />
     <Content Include="addtestimonial.htm" />

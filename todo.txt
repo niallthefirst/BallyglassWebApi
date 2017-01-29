@@ -1,6 +1,6 @@
 
-+Fix header image. narrow or split into 3. or just use text.
 +Fix links to hogans, facebook and tripadvisor.
++Mention fishing
 +SEO
 +Webmaster analysis.
 +Sitemap.
