@@ -1,5 +1,4 @@
 
-+Fix links to hogans, facebook and tripadvisor.
 +Mention fishing
 +SEO
 +Webmaster analysis.
