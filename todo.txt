@@ -4,7 +4,6 @@
 +Webmaster analysis.
 +Sitemap.
 +Get images showing in google.
-+Only show Calendar when section in view.
 +Testimonials -
 	Copy the content. Add a new page.	 
 

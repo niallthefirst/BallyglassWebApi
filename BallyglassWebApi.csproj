@@ -261,6 +261,7 @@
     <None Include="scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="scripts\jquery-2.1.4.js" />
     <Content Include="scripts\jquery-2.1.4.min.js" />
+    <Content Include="scripts\myapp.js" />
     <Content Include="scripts\mycarousel.js" />
     <Content Include="scripts\myerrors.js" />
     <Content Include="scripts\myfacebook.js" />
