@@ -228,7 +228,7 @@
 
 
     <div class="templatemo_lightgrey_about" id="templatemo_testimonials">
-        <div class="container">
+        <div class="container" id="testimonials">
 
         </div>
     </div>
@@ -251,10 +251,8 @@
         <h2>Calendar</h2>
         <p>Please see our free and occupied dates.</p>
         <a href="http://www.hogansirishcottages.com/cottage/County-Galway-Knockcroghery/Ballyglass-Thatched-Cottage-10139.html" target="_blank">Bookings can be made through Hogans Holiday Cottages</a>
-        
-        
             <div class="clear"></div>
-            <div class="container">
+            <div class="container" id="calendar">
                 <iframe src="https://www.google.com/calendar/embed?title=Current%20Ballyglass%20Bookings&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ballyglasscottage%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FDublin" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
 </div>
@@ -265,7 +263,7 @@
         <h2>Photos</h2>
         <p></p>
 
-        <div class="container">
+        <div class="container" id="gallery">
             <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
                 <div class="portfolio-item">
                     <div class="portfolio-thumb">
@@ -658,6 +656,10 @@
 
             // hide #back-top first
             $("#back-top").hide();
+            
+            $("#testimonials").hide();
+            $("#calendar").hide();
+            $("#gallery").hide();
 
             // fade in #back-top
             $(function () {
@@ -774,6 +776,19 @@ $(window).scroll(function(){
        menuItems
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }
+  
+   if(id == "templatemo_testimonials")
+   {
+       $("#testimonials").show();
+   }
+   if(id == "templatemo_calendar")
+   {
+       $("#calendar").show();
+   }
+   if(id == "templatemo_gallery")
+   {
+       $("#gallery").show();
    }
 });
     </script>
