@@ -189,6 +189,7 @@ $(window).scroll(function(){
     if(id == "templatemo_testimonials")
     {
         $("#testimonials").show();
+        testimonialModule.DrawAllAtOnce();
     }
     if(id == "templatemo_calendar")
     {

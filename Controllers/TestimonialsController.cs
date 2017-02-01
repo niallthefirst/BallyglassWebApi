@@ -15,7 +15,7 @@ namespace BallyglassWebApi.Controllers
     {
         private static string ConnectionString()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["TestimonialsDB"].ToString();
+            var connectionString = ConfigurationManager.ConnectionStrings["ballyglassDB"].ToString();
             return connectionString;
         }
 
