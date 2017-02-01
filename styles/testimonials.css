@@ -1,0 +1,45 @@
+﻿#testimonialsArticle
+{
+	
+	margin-top:2%;
+	}
+
+	
+blockquote
+{
+	background-color:#E2DBD3;
+	}
+
+
+
+blockquote:before {
+    content:open-quote;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 6px;
+    position: absolute;
+    top: 12px;
+}
+
+/*hyphen before the author*/
+blockquote > footer > cite:before {
+	content: " - ";
+}
+
+article section 
+{
+	font-size:large;
+}
+
+article header
+{
+	font-size:x-large;
+    font-weight:bold;
+     padding-bottom: 30px;
+    display: block;
+    
+}
+article footer
+{
+	font-size:large;
+}

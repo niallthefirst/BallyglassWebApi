@@ -74,11 +74,14 @@ $(window).load(function () {
     });
 });
 
+var testimonialsAlreadyDrawn = false;
+
 $(document).ready(function () {
 
     // hide #back-top first
     $("#back-top").hide();
 
+    
     $("#testimonials").hide();
     $("#calendar").hide();
     $("#gallery").hide();
@@ -189,7 +192,11 @@ $(window).scroll(function(){
     if(id == "templatemo_testimonials")
     {
         $("#testimonials").show();
-        testimonialModule.DrawAllAtOnce();
+        if(testimonialsAlreadyDrawn == false)
+        {
+            testimonialsAlreadyDrawn = true;
+            testimonialModule.DrawAllAtOnce();
+        }
     }
     if(id == "templatemo_calendar")
     {

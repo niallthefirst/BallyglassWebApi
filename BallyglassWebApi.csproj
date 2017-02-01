@@ -275,6 +275,7 @@
     <Content Include="styles\mainstylesheet.css" />
     <Content Include="styles\singlepagestylesheet.css" />
     <Content Include="addtestimonial.htm" />
+    <Content Include="styles\testimonials.css" />
     <Content Include="styles\textinimage.css" />
     <Content Include="testimonials.htm" />
     <Content Include="todo.txt" />
